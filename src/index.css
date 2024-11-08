@@ -11,3 +11,25 @@
   min-height: 100vh;
   display: flex;
 }
+
+
+/* App container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Sidebar width control */
+.app-container .sidebar {
+  flex: 0 0 250px; /* Sidebar fixed width */
+}
+
+/* Main section */
+.app-container .main {
+  flex: 1; /* Main takes remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

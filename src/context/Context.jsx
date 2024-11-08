@@ -1,5 +1,6 @@
+// src/context/Context.jsx
 import { createContext, useState } from 'react';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 import runChat from '../config/AI';
 
 export const Context = createContext();
@@ -13,7 +14,7 @@ const ContextProvider = (props) => {
   const [resultData, setResultData] = useState("");
 
   const delayPara = (index, nextWord) => {
-    setTimeout(function () {
+    setTimeout(() => {
       setResultData((prev) => prev + nextWord);
     }, 75 * index);
   };
@@ -88,9 +89,8 @@ const ContextProvider = (props) => {
   );
 };
 
-// Step 2: Add PropTypes validation
 ContextProvider.propTypes = {
-  children: PropTypes.node.isRequired, // Define the expected type for children
+  children: PropTypes.node.isRequired,
 };
 
 export default ContextProvider;
