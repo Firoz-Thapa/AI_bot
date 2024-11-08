@@ -1,7 +1,7 @@
 // src/context/Context.jsx
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
-import runChat from '../config/AI';
+import runChat from '../components/Main/config/AI';
 
 export const Context = createContext();
 

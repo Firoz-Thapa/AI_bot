@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
-import runChat from '../config/AI'; 
+import runChat from '../Main/config/AI'; 
 
 export const Context = createContext();
 
